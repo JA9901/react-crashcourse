@@ -21,7 +21,7 @@ function Home() {
   }, []);
 
   function renderUsers() {
-    users.map((user) => (
+    return users.map((user) => (
         <Link to={`/users/${user.id}`} key={user.id}>
           <User
             id={user.id}
